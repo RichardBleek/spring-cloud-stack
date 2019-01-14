@@ -1,0 +1,5 @@
+Start the cloudserver
+start the catalog cloud client
+start the feign client
+
+http://localhost:8181/catalogus this will call the catalog application via the cloud server

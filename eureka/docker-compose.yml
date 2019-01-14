@@ -1,0 +1,40 @@
+version: '3'
+services:
+    zuul-service:
+        image: zuul-service:0.0.1-SNAPSHOT
+        container_name: "zuul-service"
+        ports:
+            - 8762:8762
+        depends_on:
+            - eureka
+        networks:
+            - webnet
+    catalog:
+        image: catalog:0.0.1-SNAPSHOT
+#        container_name: "catalog"
+#        ports:
+#            - 8080:8080
+        depends_on:
+            - eureka
+        networks:
+            - webnet
+    portal:
+        image: portal:0.0.1-SNAPSHOT        
+#       container_name: "catalog-api-client"
+#       ports:
+#           - 8181:8181
+#        deploy:
+#          replicas: 3
+        depends_on:
+            - eureka
+        networks:
+            - webnet
+    eureka:
+        image: eureka:0.0.1-SNAPSHOT
+        container_name: "eureka"
+        ports:
+            - 8761:8761
+        networks:
+            - webnet
+networks:
+  webnet:
