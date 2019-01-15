@@ -29,6 +29,8 @@ Stop and remove container
 Docker compose, to launch all images at once
 - docker-compose up --scale portal=3 -d
 
+Check docker log
+- docker logs -f eureka_portal_1
 
 ### Troubleshooting
 
