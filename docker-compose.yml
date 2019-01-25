@@ -36,6 +36,12 @@ services:
             - eureka
         networks:
             - webnet
+    message-service:
+        image: message-service:0.0.1-SNAPSHOT
+        depends_on:
+            - eureka
+        networks: 
+            - webnet
     eureka:
         image: eureka:0.0.1-SNAPSHOT
         container_name: "eureka"
