@@ -1,5 +1,12 @@
 version: '3'
 services:
+    config:
+        image: config:0.0.1-SNAPSHOT
+        container_name: "config"
+        ports:
+            - 8888:8888
+        networks:
+            - webnet
     zuul-service:
         image: zuul-service:0.0.1-SNAPSHOT
         container_name: "zuul-service"
@@ -34,6 +41,8 @@ services:
         container_name: "eureka"
         ports:
             - 8761:8761
+        depends_on:
+            - config
         networks:
             - webnet
 networks:
