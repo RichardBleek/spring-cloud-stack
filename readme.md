@@ -3,11 +3,11 @@ All projects are in java 11 using the Finsley.SR2 spring cloud release.
 
 ### Projects
 - eureka
+- config
 - zuul service
 - catalog
 - portal
-
-- config (needs updating to java 11)
+- message-service
 
 ### Handy commands
 Build and add to local docker images:
@@ -38,3 +38,6 @@ Check docker log
 [INFO] Pulling from library/openjdk
 [ERROR] no matching manifest for unknown in the manifest list entries
 solution: Turn on experimental features when using docker for windows
+
+### TODOs
+- configure config so it's works with eureka, config first
