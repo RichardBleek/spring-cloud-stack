@@ -1,4 +1,4 @@
-package rs.pscode.config;
+package com.rbleek.springcloud;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,5 +12,4 @@ public class ConfigApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }

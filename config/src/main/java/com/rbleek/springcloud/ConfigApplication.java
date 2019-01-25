@@ -1,4 +1,4 @@
-package rs.pscode.config;
+package com.rbleek.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
