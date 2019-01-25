@@ -85,7 +85,7 @@
 							</execution>
 						</executions>
 						<configuration>
-							<repository>config</repository>
+							<repository>message-service</repository>
 							<tag>${project.version}</tag>
 
 							<buildArgs>
