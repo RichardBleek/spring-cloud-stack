@@ -1,4 +1,4 @@
-package com.rbleek.springcloud;
+package com.rbleek.springcloud.dto;
 
 import java.util.ArrayList;
 import java.util.List;
